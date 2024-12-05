@@ -71,7 +71,7 @@ print(rok)
 # paty den prvniho mesice # paty den prvniho mesice
 print( mesice [0][0]   #print( mesice [0][0]) 
 
-#print( mesice [0][0]e#print( mesice [0][0]) 
+print( mesice [0][0]e#print( mesice [0][0]) 
 #print( mesice [0][0]e#print( mesice [0][0]) 
 
 #print( mesice [0][0]e#print( mesice [0][0]) 
