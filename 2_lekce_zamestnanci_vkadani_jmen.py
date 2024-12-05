@@ -19,5 +19,5 @@ print("Nová jména přidána :" , zamestnanci_a)
 zamestnanci_b = zamestnanci.copy()
 zamestnanci_b.insert(1, "Bruno")
 
-vypiš zamestnanci_b ,aktualni list
+#print(zamestnanci_b , aktualni list)
 print("Nová jména vložena :" , zamestnanci_b)
