@@ -12,6 +12,6 @@ which traverse the valley.'''
 # Extrahujeme slova pomocí regulárního výrazu
 slova = text.split() 
 
-cislice = sum(1 for cislo in slova if cislo.isnumeric())
+#cislice = sum(1 for cislo in slova if cislo.isnumeric())
 
-print(cislice)
+print(max(text))
