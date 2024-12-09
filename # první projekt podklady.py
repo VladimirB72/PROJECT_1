@@ -6,8 +6,8 @@ users = {
     "liz": "pass123"
 }
 username = input("Zadej uživatelské jméno:")
-pasword = input("Zadej heslo:")
-if users.get(username) == pasword:
+password = input("Zadej heslo:")
+if users.get(username) == password:
     print("Vítej v aplikaci", username)
     print("Máš 3 texty k analýze.")
 else:

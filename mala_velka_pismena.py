@@ -1,21 +1,32 @@
 
-text = '''The monument contains 8198 acres and protects
-a portion of the largest deposit of freshwater fish
-fossils in the world. The richest fossil fish deposits
-are found in multiple limestone layers, which lie some
-100 feet below the top of the butte. The Fossils
-represent several varieties OF perch, as well as
-other freshwater genera and herring similar to those
-in modern oceans. Other fish such as paddlefish,
-garpike and stingray are also present.'''
+text = '''Situated about 10 miles west of Kemmerer,
+Fossil Butte is a ruggedly impressive
+topographic feature that rises sharply
+some 1000 feet above Twin Creek Valley
+to an elevation of more than 7500 feet
+above sea level. The butte is located just
+north of US 30N and the Union Pacific Railroad,
+which traverse the valley.'''
 
 
-slova = text.split()  # Extrahujeme slova pomocí regulárního výrazu
-celkem_slov = len(slova)  # Celkový počet slov
-slova_zacinajici_velkym = sum(1 for slovo in slova if slovo[0].isupper())  # Počet slov začínajících velkým písmenem
-slova_velkymi_pismeny = sum(1 for slovo in slova if slovo.isupper())  # Počet slov psaných velkými písmeny
-slova_malymi_pismeny = sum(1 for slovo in slova if slovo.islower())  # Počet slov psaných malými písmeny
+# Extrahujeme slova pomocí regulárního výrazu
+slova = text.split() 
+
+# Celkový počet slov
+celkem_slov = len(slova)  
+
+# Počet slov začínajících velkým písmenem
+slova_zacinajici_velkym = sum(1 for slovo in slova if slovo[0].isupper()) 
+
+
+# Počet slov psaných velkými písmeny
+slova_velkymi_pismeny = sum(1 for slovo in slova if slovo.isupper() and slovo[0].isnumeric()) 
+slova_malymi_pismeny = sum(1 for slovo in slova if slovo.islower()) 
+ # Počet slov psaných malými písmeny
 cislice = sum(1 for slovo in slova if slovo.isnumeric())
+
+
+
 statistiky = {
         "celkem_slov": celkem_slov,
         "slova_zacinajici_velkym": slova_zacinajici_velkym,
@@ -30,6 +41,7 @@ print("Ve vybraném textu je :", slova_velkymi_pismeny, "slov velkými písmeny.
 print("Ve vybraném textu je :", slova_malymi_pismeny, "slov malými písmeny.")
 print(statistiky)
 print(cislice)
+print["cislice"]
 # Příklad použití:
 #vysledek = analyzuj_text_statistiky(text) :
 

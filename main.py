@@ -1,4 +1,4 @@
 #pokus print
 print("ahoj")
 print("přidan radek")
-print()
+print("pokus3")
