@@ -88,7 +88,7 @@ else:
     # Počet slov psaných velkými písmeny
 
     slova_velkymi_pismeny = len(
-        [slovo for slovo in slova if slovo.isupper() and slovo[0].isdigit()]
+        [slovo for slovo in slova if slovo.isupper() and not slovo[0].isdigit()]
     )
 
     # Počet slov psaných malými písmeny
